@@ -15,10 +15,10 @@ namespace ConsoleUI
 			int roomLocation = 0;
 
 			// arrays
-			string[] rooms = new string[5] { "room1", "room2" , "room3" , "room4" , "room5" };
-			string[] weapons = new string[4] { "weapon1", "weapon2" , "weapon3" , "weapon4" };
-			string[] potions = new string[2] { "potion1", "potion2"};
-			string[] treasures = new string[3] { "treasure1", "treasure2", "treasure3" };
+			string[] rooms = new string[5] { "Enterence", "Hallway" , "" , "room4" , "room5" };
+			string[] weapons = new string[4] { "Eye of Horus", "AC-011 Blade" , "Tome of Destruction" , "Excalibur" };
+			string[] potions = new string[2] { "energy potion", " recovery potion"};
+			string[] treasures = new string[3] { "Time enhancing gloves", "", "" };
 
 			//lists
 			List<string> items = new List<string>() { "item1", "item2", "item3", "item4" };

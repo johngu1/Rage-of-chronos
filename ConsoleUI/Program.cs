@@ -15,21 +15,21 @@ namespace ConsoleUI
 			int roomLocation = 0;
 
 			// arrays
-			string[] rooms = new string[5] { "Enterence", "Hallway" , "" , "room4" , "room5" };
+			string[] rooms = new string[5] { " Main Enterence", " Hallway" , " Fountain room" , " Rest Area" , " Town" };
 			string[] weapons = new string[4] { "Eye of Horus", "AC-011 Blade" , "Tome of Destruction" , "Excalibur" };
-			string[] potions = new string[2] { "energy potion", " recovery potion"};
-			string[] treasures = new string[3] { "Time enhancing gloves", "", "" };
+			string[] potions = new string[2] { "energy potion", "recovery potion"};
+			string[] treasures = new string[3] { "Time enhancing gloves", "energy pendent", "Health bracers" };
 
 			//lists
-			List<string> items = new List<string>() { "item1", "item2", "item3", "item4" };
-			List<string> mobs = new List<string>() {  "mob1", "mob2", "mob3", "mob4", "mob5"};
+			List<string> items = new List<string>() { "bombs", "ropes", "coins", "knife" };
+			List<string> mobs = new List<string>() {  "lava golem", "construct soldier", "evil clone", "zombie mage", "raid raptors"};
 
 			//Main menu
 
 			while (exit == false)
 			{
 
-				Console.WriteLine($"You are in ...{rooms[roomLocation]}");
+				Console.WriteLine($"You are in the{rooms[roomLocation]}");
 				Console.WriteLine("1. Display Rooms");
 				Console.WriteLine("2. Display Weapon");
 				Console.WriteLine("3. Display Potion");

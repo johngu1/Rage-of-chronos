@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+* 2/12/2022
+* CSC 153
+* Nguyen Johnny
+* Build a program with 4 arrays, with 2 lists, while having a modified menu
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

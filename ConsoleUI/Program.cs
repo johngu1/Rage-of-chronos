@@ -24,14 +24,15 @@ namespace ConsoleUI
 			//test for stream writer
 			string name = "joe";
 
-			StreamWriter outputfile;
+			StreamWriter outputFile;
 
             try
             {
-				outputfile = File.CreateText("text.txt");
-				outputfile.WriteLine(name);
+				outputFile = File.CreateText("test.txt");
 
-				outputfile.Close();
+				outputFile.WriteLine(name);
+
+				outputFile.Close();
             }
 			catch(Exception ex)
             {

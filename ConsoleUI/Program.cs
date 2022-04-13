@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ConsoleUI
 {
@@ -18,10 +19,28 @@ namespace ConsoleUI
         {
 			//variable
 			bool exit = false;
-			int roomLocation = 0;
+            int roomLocation = 0;
 
-			// arrays
-			string[] rooms = new string[5] { " Main Enterence", " Hallway" , " Fountain room" , " Rest Area" , " Town" };
+			//test for stream writer
+			string name = "joe";
+
+			StreamWriter outputfile;
+
+            try
+            {
+				outputfile = File.CreateText("text.txt");
+				outputfile.WriteLine(name);
+
+				outputfile.Close();
+            }
+			catch(Exception ex)
+            {
+				Console.WriteLine(ex.Message);
+				Console.ReadLine();
+            }
+
+            // arrays
+            string[] rooms = new string[5] { " Main Enterence", " Hallway" , " Fountain room" , " Rest Area" , " Town" };
 			string[] weapons = new string[4] { "Eye of Horus", "AC-011 Blade" , "Tome of Destruction" , "Excalibur" };
 			string[] potions = new string[2] { "energy potion", "recovery potion"};
 			string[] treasures = new string[3] { "Time enhancing gloves", "energy pendent", "Health bracers" };

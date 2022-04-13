@@ -22,7 +22,7 @@ namespace ConsoleUI
             int roomLocation = 0;
 
 			//test for stream writer
-			string name = "joe";
+			string room = " Main Enterence,  Hallway ,  Fountain room ,  Rest Area ,  Town";
 
 			StreamWriter outputFile;
 
@@ -30,18 +30,18 @@ namespace ConsoleUI
             {
 				outputFile = File.CreateText("test.txt");
 
-				outputFile.WriteLine(name);
+				outputFile.WriteLine(room);
 
 				outputFile.Close();
             }
-			catch(Exception ex)
+		     catch(Exception ex)
             {
 				Console.WriteLine(ex.Message);
 				Console.ReadLine();
             }
 
-            // arrays
-            string[] rooms = new string[5] { " Main Enterence", " Hallway" , " Fountain room" , " Rest Area" , " Town" };
+			// arrays
+			string[] rooms = new string[5];
 			string[] weapons = new string[4] { "Eye of Horus", "AC-011 Blade" , "Tome of Destruction" , "Excalibur" };
 			string[] potions = new string[2] { "energy potion", "recovery potion"};
 			string[] treasures = new string[3] { "Time enhancing gloves", "energy pendent", "Health bracers" };
